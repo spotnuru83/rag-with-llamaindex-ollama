@@ -1,0 +1,5 @@
+https://github.com/siddiquiamir/llamaindex/blob/main/RAG%20with%20llama3.1.ipynb
+
+https://docs.llamaindex.ai/en/stable/examples/embeddings/ollama_embedding/
+https://docs.llamaindex.ai/en/stable/examples/vector_stores/chroma_metadata_filter/
+https://docs.llamaindex.ai/en/stable/examples/llm/ollama/
