@@ -1,2 +1,4 @@
 env
 chroma_db
+rag-env
+sentence_index

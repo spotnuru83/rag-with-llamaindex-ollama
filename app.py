@@ -29,11 +29,13 @@ index = VectorStoreIndex.from_documents(
     documents, storage_context=storage_context, embed_model=ollama_embedding
 )
 
+print("Vector Database is created!")
+
 from llama_index.llms.ollama import Ollama
 llm = Ollama(model="llama3.1", request_timeout=420.0)
 
 # Query Data from the persisted index
 query_engine = index.as_query_engine(llm=llm)
 
-response = query_engine.query("What is the DEPRECIATION FOR FIXING IDV OF THE VEHICLE?")
+response = query_engine.query("can you give me cover for injuries that are covered. and please include the quote and page number in the document")
 print(response)
