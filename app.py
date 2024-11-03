@@ -12,7 +12,7 @@ documents = SimpleDirectoryReader(input_files=["./data/ATGL_ConferenceCall_2024.
 db = chromadb.PersistentClient(path="./chroma_db")
 chroma_collection = db.get_or_create_collection("rag_collection")
 
-# save embedding to disk
+# Creating the storage context to create a bridge between data you feed in and the retrieval mechanisms
 vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
 storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
